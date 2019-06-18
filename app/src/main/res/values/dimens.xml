@@ -1,0 +1,19 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--menu-->
+    <dimen name="menu_title_size">15sp</dimen>
+    <dimen name="menu_summary_size">10sp</dimen>
+    <dimen name="menu_category_size">12sp</dimen>
+
+    <dimen name="page_margin">8dp</dimen>
+
+    <dimen name="image_round_radius">4dp</dimen>
+
+    <dimen name="mp.divider.xlarge">24dp</dimen>
+
+    <!-- Music -->
+    <dimen name="mp.music.playControls.marginTop">24dp</dimen>
+    <dimen name="mp.music.playControls.marginBottom">8dp</dimen>
+</resources>

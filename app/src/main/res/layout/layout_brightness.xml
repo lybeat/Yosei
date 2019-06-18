@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root_brightness"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_transparent_fillet"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_brightness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_brightness" />
+
+    <ProgressBar
+        android:id="@+id/pb_brightness"
+        style="@style/Yosei.Theme.Widget.ProgressBar.Horizontal"
+        android:layout_width="160dp"
+        android:layout_height="2dp"
+        android:layout_marginRight="10dp" />
+</LinearLayout>

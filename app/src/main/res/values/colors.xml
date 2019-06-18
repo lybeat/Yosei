@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="controlBgColor">#df272727</color>
+
+    <!-- Common -->
+    <color name="transparent">#00000000</color>
+    <color name="transparent_black">#aa000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF3C24</color>
+
+    <!--important-->
+    <!--主题色，用于需要强调的文字、按钮和icon-->
+    <color name="color_accent">#AA69B8</color>
+    <!--用于重要的文字信息、内容标题信息-->
+    <color name="color_title">#333333</color>
+    <!--用于链接文字颜色-->
+
+    <!--normal-->
+    <!--用于普通段落信息、用户名等-->
+    <color name="color_content">#474747</color>
+    <!--用于次要的文字信息-->
+    <color name="color_secondary1">#888888</color>
+    <color name="color_secondary2">#999999</color>
+    <color name="color_secondary3">#c7c7c7</color>
+    <color name="color_secondary4">#eeeeee</color>
+
+    <!--weak-->
+    <!--用于内容区域底色-->
+    <color name="bg_content">#F7F7F7</color>
+    <!--用于分割块的标题栏底色、动态资源的底色-->
+    <color name="bg_secondary">#ECECEC</color>
+    <!--用于分割线-->
+    <color name="divider">#1a000000</color>
+
+    <!--夜间模式-->
+    <!--important-->
+    <color name="night_color_title">#adaeb3</color>
+    <!--normal-->
+    <color name="night_color_content">#adaeb3</color>
+    <!--weak-->
+    <color name="night_bg_content">#242424</color>
+    <color name="night_bg_secondary">#373737</color>
+    <color name="night_divider">#0dffffff</color>
+
+</resources>

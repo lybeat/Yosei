@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="设置"
+            android:textColor="@color/color_title"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="bottom"
+            android:background="@color/divider" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <cc.arturia.yosei.widget.menu.CategoryMenu
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:aliceCategory="通用" />
+
+            <cc.arturia.yosei.widget.menu.SwitchMenu
+                android:id="@+id/menu_file_hide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:aliceSummary="需要独立密码才能访问"
+                app:aliceTitle="使用文件隐藏功能"
+                app:aliceUnderline="true" />
+
+            <cc.arturia.yosei.widget.menu.CategoryMenu
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:aliceCategory="播放" />
+
+            <cc.arturia.yosei.widget.menu.StateMenu
+                android:id="@+id/menu_play_action"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:aliceTitle="播放完成后动作"
+                app:aliceUnderline="true" />
+
+            <cc.arturia.yosei.widget.menu.StateMenu
+                android:id="@+id/menu_render_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:aliceState="Surface"
+                app:aliceSummary="为视频选择不同的渲染表面"
+                app:aliceTitle="视频渲染表面"
+                app:aliceUnderline="true" />
+
+            <cc.arturia.yosei.widget.menu.CategoryMenu
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:aliceCategory="字幕" />
+
+            <cc.arturia.yosei.widget.menu.SwitchMenu
+                android:id="@+id/menu_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:aliceSummary="自动匹配字幕文件"
+                app:aliceTitle="字幕文件名称要和视频文件一致"
+                app:aliceUnderline="true" />
+
+            <cc.arturia.yosei.widget.menu.CategoryMenu
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:aliceCategory="帮助" />
+
+            <cc.arturia.yosei.widget.menu.BaseMenu
+                android:id="@+id/menu_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:aliceTitle="关于里世界"
+                app:aliceUnderline="true" />
+
+            <cc.arturia.yosei.widget.menu.BaseMenu
+                android:id="@+id/menu_license"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:aliceTitle="开源许可"
+                app:aliceUnderline="false" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

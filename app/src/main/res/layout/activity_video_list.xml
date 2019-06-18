@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <FrameLayout
+            android:id="@+id/fl_tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="视频"
+                android:textColor="@color/color_title"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_switch_layout"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:contentDescription="@null"
+                android:scaleType="center"
+                android:src="@drawable/ic_list" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:background="@color/divider" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_file_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_unlock"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@null"
+                android:gravity="center"
+                android:scaleType="center"
+                android:src="@drawable/ic_unlock" />
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@null"
+                android:gravity="center"
+                android:scaleType="center"
+                android:src="@drawable/ic_delete" />
+
+            <ImageView
+                android:id="@+id/iv_all_select"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@null"
+                android:scaleType="center"
+                android:src="@drawable/ic_all_select" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:padding="2dp"
+        android:scrollbars="none"
+        tools:listitem="@layout/item_video" />
+</LinearLayout>

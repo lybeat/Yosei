@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="folder_edit_array">
+        <item>删除</item>
+        <item>修改封面</item>
+    </string-array>
+
+</resources>
